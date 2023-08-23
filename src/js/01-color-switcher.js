@@ -6,7 +6,7 @@ const buttonStart = document.querySelector('[data-start]');
 const buttonStop = document.querySelector('[data-stop]')
 // console.log(buttonStart)
 // console.log(buttonStop)
-let interval = null;
+let interval = 0;
 
 buttonStart.addEventListener("click", onStart);
 
@@ -23,6 +23,6 @@ buttonStop.addEventListener('click', onStop);
 
 function onStop(){
     clearInterval(interval);
-    interval = null;
+    interval = 0;
     buttonStart.disabled = false;
 }
